@@ -7,4 +7,13 @@
 body {
     height: 100vh;
     background-color: #2A2A2A;
+    overflow: hidden;
+}
+
+h1 {
+  font-family: "Londrina Shadow", serif;
+}
+
+h2, h3 {
+  font-family: "Nanum Brush Script", serif;
 }
