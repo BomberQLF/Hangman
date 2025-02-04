@@ -29,6 +29,8 @@ const Game = () => {
     const isGameOver = wrongGuesses >= maxErrors;
     const isGameWon = wordToGuess.split("").every((letter) => guessedLetters.includes(letter));
 
+    // AJOUTER UNE FONCTION POUR CONSERVER LES IMG PRÉCEDENTES AVEC LE REST OPERATOR
+
     return (
         <>
             {isGameOver && (
