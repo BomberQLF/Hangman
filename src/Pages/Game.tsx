@@ -5,6 +5,7 @@ import Letters from "../Components/Letters";
 import WordDisplay from "../Components/WordDisplay";
 import famousLanguages from "../Data/Data";
 import Stickman from "../Components/Stickman";
+import HomeButton from "../Components/HomeButton";
 
 const Game = () => {
     const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
@@ -29,15 +30,15 @@ const Game = () => {
     const isGameOver = wrongGuesses >= maxErrors;
     const isGameWon = wordToGuess.split("").every((letter) => guessedLetters.includes(letter));
 
-    // AJOUTER UNE FONCTION POUR CONSERVER LES IMG PRÉCEDENTES AVEC LE REST OPERATOR
 
     return (
         <>
+            < HomeButton />
             {isGameOver && (
-                <h1>The word was {wordToGuess}</h1>
+                <h1 className="text-center text-[7rem] text-white">The word was {wordToGuess}</h1>
             )}
             {isGameWon && (
-                <h1>Congrats!</h1>
+                <h1 className="text-center text-[7rem] text-white">Congrats!</h1>
             )}
             <Stickman wrongGuesses={wrongGuesses} />
             <WordDisplay guessedLetters={guessedLetters} wordToGuess={wordToGuess} />

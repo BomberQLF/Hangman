@@ -5,6 +5,8 @@ import './Styles/Home.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <div className="parent">
+      <App />
+    </div>
   </StrictMode>,
 )
