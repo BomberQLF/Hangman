@@ -22,7 +22,7 @@ const Game = () => {
         if (!guessedLetters.includes(letter)) {
             setGuessedLetters([...guessedLetters, letter]);
             if (!wordToGuess.includes(letter)) {
-                setWrongGuesses(prev => prev + 1);  
+                setWrongGuesses(prev => prev + 1);
             }
         }
     };
@@ -35,10 +35,14 @@ const Game = () => {
         <>
             < HomeButton />
             {isGameOver && (
-                <h1 className="text-center text-[7rem] text-white">The word was {wordToGuess}</h1>
+                <h1 className="abs text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white">
+                    The word was {wordToGuess}
+                </h1>
             )}
             {isGameWon && (
-                <h1 className="text-center text-[7rem] text-white">Congrats!</h1>
+                <h1 className="abs text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white">
+                    Congrats!
+                </h1>
             )}
             <Stickman wrongGuesses={wrongGuesses} />
             <WordDisplay guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
