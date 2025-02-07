@@ -74,6 +74,10 @@ span {
   top: 10.7rem;
   left: 10rem;
 }
+
+.play-ctn:hover > h3 {
+  color: black;
+}
 @media (max-width: 375px) {
   .stickman-container {
     width: 150px;  /* Réduit la largeur */

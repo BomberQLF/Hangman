@@ -5,7 +5,7 @@ const Play = (): JSX.Element => {
     return (
         <div className="flex flex-col items-center mt-16">
             <Link to="/game">
-                <div className="flex justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl border border-white rounded-xl py-3 px-8 sm:px-12 md:px-16 lg:px-20 transition hover:bg-white hover:text-black">
+                <div className="play-ctn flex justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl border border-white rounded-xl py-3 px-8 sm:px-12 md:px-16 lg:px-20 transition hover:bg-white">
                     <h3 className="text-white font-bold">Play Now!</h3>
                 </div>
             </Link>
