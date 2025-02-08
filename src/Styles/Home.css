@@ -89,19 +89,22 @@ span {
     top: -2.6rem;
     left: 2rem;
   }
+  .part-2 {
+    top: -2.6rem;
+  }
   .part-3 {
-    top: -2.3rem;
+    top: -2.6rem;
     left: 2rem;
   }
   .part-4 {
-    top: -2.3rem;
-    left: 10.75rem;
+    top: -2.6rem;
+    left: 8.6rem;
     height: 50px;
   }
   .part-5 {
     position: absolute;
-    top: 0.7rem;
-    left: 10rem;
+    top: 0.3rem;
+    left: 8rem;
     width: 30px;
     height: 40px;
   }
