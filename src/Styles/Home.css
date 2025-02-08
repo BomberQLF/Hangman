@@ -80,8 +80,8 @@ span {
 }
 @media (max-width: 375px) {
   .stickman-container {
-    width: 150px;  /* Réduit la largeur */
-    height: 225px; /* Réduit la hauteur */
+    width: 150px;
+    height: 225px; 
   }
 
   .part-1 {
