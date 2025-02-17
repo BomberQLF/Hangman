@@ -113,4 +113,9 @@ span {
     top: 110px;
     left: 3%;
   }
+  #retry {
+    position: absolute;
+    right: 36%;
+    top: 19.5rem;
+  }
 }

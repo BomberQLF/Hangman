@@ -6,17 +6,19 @@ import WordDisplay from "../Components/WordDisplay";
 import famousLanguages from "../Data/Data";
 import Stickman from "../Components/Stickman";
 import HomeButton from "../Components/HomeButton";
+import Retry from "../Components/Retry";
 
 const Game = () => {
     const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
     const [wordToGuess, setWordToGuess] = useState<string>("");
     const [wrongGuesses, setWrongGuesses] = useState<number>(0);
+    const [retry, setRetry] = useState<boolean>(false);
     const maxErrors: number = 6;
 
     useEffect(() => {
         const randomIndex = Math.floor(Math.random() * famousLanguages.length);
         setWordToGuess(famousLanguages[randomIndex].toUpperCase());
-    }, []);
+    }, [retry]);
 
     const handleGuesses = (letter: string): void => {
         if (!guessedLetters.includes(letter)) {
@@ -25,6 +27,12 @@ const Game = () => {
                 setWrongGuesses(prev => prev + 1);
             }
         }
+    };
+
+    const resetGame = () => {
+        setGuessedLetters([]);
+        setWrongGuesses(0);
+        setRetry(prev => !prev); // ici on iverse la valeur de retry pour que le useffect le détecte
     };
 
     const isGameOver = wrongGuesses >= maxErrors;
@@ -45,6 +53,9 @@ const Game = () => {
                 </h1>
             )}
             <Stickman wrongGuesses={wrongGuesses} />
+            {(isGameOver || isGameWon) && (
+                < Retry onclick={resetGame} />
+            )}
             <WordDisplay guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
             <Letters guessedLetters={guessedLetters} onLetterClick={handleGuesses} />
         </>
