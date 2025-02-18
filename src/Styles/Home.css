@@ -75,6 +75,12 @@ span {
   left: 10rem;
 }
 
+.rty {
+  font-family: "Nanum Brush Script", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
 .play-ctn:hover > h3 {
   color: black;
 }
@@ -112,10 +118,17 @@ span {
     position: absolute;
     top: 110px;
     left: 3%;
+    width: 100%;
   }
   #retry {
+    top: 50px;
     position: absolute;
-    right: 36%;
-    top: 19.5rem;
+    right: 40px;
+    font-family: "Nanum Brush Script", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .spn {
+    font-size: 2rem;
   }
 }
