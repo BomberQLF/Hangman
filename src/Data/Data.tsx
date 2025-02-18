@@ -19,7 +19,25 @@ const famousLanguages: string[] = [
     "R",
     "SHELL",
     "SQL",
-    "ELIXIR"
+    "ELIXIR",
+    "COBOL",
+    "FORTRAN",
+    "PASCAL",
+    "BASH",
+    "CLOJURE",
+    "ERLANG",
+    "GROOVY",
+    "JULIA",
+    "LISP",
+    "NIM",
+    "UIUA",
+    "ZIG",
+    "ASSEMBLY",
+    "GLEAM",
+    "COFFEESCRIPT",
+    "AWK",
+    "D",
+    "OCAML",
 ];
 
 export default famousLanguages;
