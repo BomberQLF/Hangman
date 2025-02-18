@@ -4,7 +4,7 @@ interface RetryProps {
 
 const Retry = ({ onclick }: RetryProps): JSX.Element => {
     return (
-        <button className="text-white border border-white border-solid rounded-xl px-8 w-24 mx-auto" id="retry" onClick={onclick}>Retry</button>
+        <button className="rty text-white absolute right-[40px] top-[63px]" id="retry" onClick={onclick}>Retry</button>
     );
 }
 
